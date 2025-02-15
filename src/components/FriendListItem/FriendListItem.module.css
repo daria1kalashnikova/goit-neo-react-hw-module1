@@ -1,0 +1,30 @@
+.card {
+  border-radius: 4px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border: #000 solid 2px;
+  width: 96px;
+  transition: 200ms box-shadow;
+}
+
+.card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 25px 50px -10px,
+    rgba(0, 0, 0, 0.3) 0px 15px 30px -15px;
+}
+
+.status {
+  font-weight: 600;
+}
+
+.online {
+  composes: status;
+  color: #307a1cf0;
+}
+
+.offline {
+  composes: status;
+  color: #e92e1def;
+}
